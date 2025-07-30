@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    .di{
+      background-color: antiquewhite;
+      height: 300px;
+      width: 300px;
+      border: 2px solid black;
+      align-items: center;
+      justify-content: center;
+    }
+    .di1{
+      margin-left:55px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="di">
+    <div class="di1">
+    <input type="number" id="num1" placeholder="Enter first number"><br><br>
+    <input type="number" id="num2" placeholder="Enter second number"><br><br>
+    <input type="text" id="result" placeholder="Result"><br><br>
+    <button onclick="calculate('add')">Addition</button><br><br>
+    <button onclick="calculate('subtract')">Subtraction</button><br><br>
+    <button onclick="calculate('multiply')">Multiplication</button><br><br>
+    <button onclick="calculate('divide')">Division</button></div>
+</div>
+  <script>
+    function f1(){
+      a = parseInt(document.getElementById('num1').value);
+      b = parseInt(document.getElementById('num2').value);
+      return[a,b];
+
+      function add()
+      {
+       [a, b] = f1();
+       console.log(a);
+       console.log(b);
+       addition=(a+b);
+       console.log(addition);
+       document.getElementById("result").value = a + b; 
+      }
+
+
+
+
+
+      
+    }
+  </script>
+</body>
+</html>

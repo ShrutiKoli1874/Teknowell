@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assigment6</title>
+    <style>
+        .men{
+            background-color: aqua;
+            height:80px;
+            width: 200px;
+            align-items: center;
+            text-align: center;
+            border: 1px solid black;
+            margin-right: 500px;
+
+        }
+        #b1{
+               background-color:red;
+        }
+        #b2{
+            background-color: blue;
+
+        }
+        #b3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="men">
+        <p>Change Background Color</p>
+    <button id="b1" onclick="changecolor('Red')">Red</button>
+     <button  id="b2" onclick="changecolor('Blue')">Blue</button>
+      <button id="b3" onclick="changecolor('Green')">Green</button></div>
+</body>
+<script>
+    function changecolor(color){
+            document.body.style.backgroundColor=color;
+
+    }
+</script>
+</script>
+</html>

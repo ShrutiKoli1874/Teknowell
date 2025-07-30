@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1" onclick="qt()">time is money</h1>
+    <button onclick="qt()">click</button>
+    <script>
+        function qt(){
+            arr=['old is gold','work hard','sleep early',]
+            randomIndex=Math.floor(Math.random()*arr.length)
+            console.log(randomIndex);
+            a=document.getElementById("h1");
+            a.innerText=arr[randomIndex];
+            console.log(a);
+        }
+    </script>
+</body>
+</html>

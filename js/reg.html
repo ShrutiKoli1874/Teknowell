@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+       .container{
+        background-color: blueviolet;
+        height: 200px;
+        width: 300px;
+       }
+       .butt{
+        background-color: aquamarine;
+        height: 20px;
+        width: 50px;
+        margin-left: 100px;
+       }
+       .data{
+        margin-left: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form>
+        <h1>Registration Form</h1>
+        <div class="data">
+        <label>Enter username:</label>
+        <input type="text"  id="username" required placeholder="Enetr username" style="width: 150px;"><br><br>
+        <label>Enter Email:</label>
+        <input type="email" id="email" required placeholder="email" style="width: 172px;"><br><br>
+        <label>Password:</label>
+        <input type=" password"  id="pass" placeholder="Password" style="width: 190px;"><br><br></div>
+        <div class="butt">
+        <button type="submit" id="btn" onclick="f1()">submit</button>
+        </div>
+
+    </form>
+    </div>
+    <script>
+        function f1(){
+            
+             let a = document.getElementById("username").value;
+            let b = document.getElementById("email").value;
+            let c= document.getElementById("Pass").value;
+            if (a == "shruti" && b == "Shruti@gmail" && c == "123") 
+            {
+                alert("Login Sucessfully");
+            } 
+            else 
+            {
+                alert("Login Failed");
+            }
+        }
+
+
+    </script>
+</body>
+</html>

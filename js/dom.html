@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h2 id="head">Good Morning</h2>
+    <button onclick="f1()">change text</button>
+    <script>
+          function f1()
+          {
+            a=document.getElementById("head");
+            a.innertext("good night");
+            a.style.color="red";
+            console.log(a);
+          }
+    </script>
+</body>
+</html>

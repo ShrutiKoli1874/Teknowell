@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // default constructor//
+        class A{
+            constructor()
+            {
+                document.writeln(`Hello`);
+            }
+        }
+        a= new A();
+
+        // parameter constructor//
+
+        class A{
+            name;
+            age;
+            constructor(name,age)
+            {
+               this.name=name;
+               this.age=age;
+            }
+            disp(){
+                document.writeln("name is "+ this.name);
+                document.writeln("<br>");
+                document.writeln("age is "+ this.age);
+            }
+        }
+        a=new A('sai',20);
+        a.disp()
+
+
+    // parameters//
+
+    class A{
+        constructor(age,name)
+        {
+            document.writeln("Age is"+ age);
+            document.writeln("name is "+ name);
+        }
+    }
+          a = new A(12,'ram');   
+
+
+    class A{
+        constructor()
+        {
+            name=prompt("enter age");
+            name=prompt("enter name");
+        }
+    }
+    a = new A();
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+
+<body>
+    <h2>login form</h2>
+    <label>Username</label><br>
+    <input type="text" required placeholder="Enter Name" id="id1"><br>
+    <label>Password</label><br>
+    <input type="password" required placeholder="Enter password" id="id2"><br><br>
+    <button onclick="f1()">Submit</button>
+</body>
+<script>
+    function f1(){
+        a=document.getElementById("id1").value;
+        b=document.getElementById("id2").value;
+        
+        if(a=='shruti' && b=='1212'){
+            alert("Login Sucessfully");
+
+        }
+        else{
+            alert("Login Failed");
+        }
+
+ } 
+
+</script>
+</html>

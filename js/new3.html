@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+    .container{
+    background-color:purple;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 450px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:15px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.data{
+    background-color:green;
+    display: flex;
+    flex-wrap: wrap;
+    width:98.9%;
+    justify-content:  center;
+    padding:5%;
+    border:2px solid black;
+    border-radius: 5px;
+}
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.datalist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+p{
+    margin-top:10px;
+    margin-bottom:10px;
+    height: 28px;
+    font-size: large;
+}
+
+input{
+    margin-top:7px;
+    height: 18px;
+    background-color: white;
+}
+
+button{
+    margin-top:10px;
+    margin-bottom: -5px;
+    height: 40px;
+    background-color:palegreen;
+    border:2px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1{
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+
+.result{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#show{
+    background-color:pink;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 10%;
+    width: 100%;
+    border:2px solid black;
+    border-radius: 5px;
+    font-size: large;
+    margin-bottom:12px;
+    margin-left:25px;
+    margin-top: 8px;
+    
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Salary Slip</h1>
+        <form>
+            <div class="data">
+                <div class="datalist">
+                    <p>Employee ID: </p>
+                    <p>Employee Name: </p>
+                    <p>Monthly Salary: </p>
+                    <p>Total Work Days:</p>
+                    <p>Enter PF: </p>
+                    <p>Enter HRA: </p>
+                    <p>Enter TA: </p>
+                    <p>Enter Absent Days: &nbsp</p>
+                </div>
+                <div class="input">
+                    <input type="text" id="ID" placeholder="ID"><br>
+                    <input type="text" id="name" placeholder="Name"><br>
+                    <input type="text" id="mSalary" placeholder="Salary"><br>
+                    <input type="text" id="td" placeholder="Total working days"><br>
+                    <input type="text" id="pf" placeholder="PF"><br>
+                    <input type="text" id="hra" placeholder="HRA"><br>
+                    <input type="text" id="ta" placeholder="TA"><br>
+                    <input type="text" id="ab" placeholder="Absent days"><br>
+                </div>
+            </div>
+        </form>
+        
+        <div class="result">
+            <button onclick="Salary()">submit</button><br>
+            <div id="show">
+                <p id="p">Final Salary </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        function Salary()
+        {
+            id=document.getElementById("ID").value;
+            console.log(id);
+            name=document.getElementById("name").value;
+            console.log(name)
+            mSalary=parseInt(document.getElementById("mSalary").value);
+            console.log(mSalary);
+            td=parseInt(document.getElementById("td").value);
+            console.log(mSalary);
+            pf=parseInt(document.getElementById("pf").value);
+            console.log(pf);
+            hra=parseInt(document.getElementById("hra").value);
+            console.log(hra);
+            ta=parseInt(document.getElementById("ta").value);
+            console.log(ta);
+            ab=parseInt(document.getElementById("ab").value);
+            console.log(ab);
+            fSalary=parseInt(((mSalary/td)*(td-ab)) + hra + ta - pf);
+            console.log(fSalary);
+            if (fSalary >=0)
+                show.innerHTML=("Final Salary of Employee <br> ID: "+id+"  "+name+ "<br>is Rs " +fSalary+" /-");
+            else
+                alert("Enter Valid Values");
+        }
+
+
+
+    </script>
+</body>
+
+</html>

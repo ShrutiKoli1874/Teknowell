@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Slip</title>
+  <style>
+    .mean{
+        background-color: aquamarine;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="mean">
+      <div class="head">
+        <h1>Salary </h1>
+      </div>
+      <div class="form">
+          <form >
+            <label> Employee ID :</label>
+            <input type="text" id="Eid" required placeholder="Enter Employee ID"> <br>
+            <label> Employee Name :</label>
+            <input type="text" id="Ename" required placeholder="Enter Employee NAme"> <br>
+            <label> Basic Salary :</label>
+            <input type="number" id="Basic" required placeholder="Enter Basic Salary"> <br>
+            <label> HRA :</label>
+            <input type="number" id="Hra" required placeholder="Enter House Rent Allowance"> <br>
+            <label> Other Allowances :</label>
+            <input type="number" id="OA" required placeholder="Enter Other Allowance like medical"> <br>
+            <label> Pf amount :</label>
+            <input type="number" id="pf" required placeholder="Enter Pf Amount "> <br>
+            <label> Professional Tax :</label>
+            <input type="number" id="tax"  placeholder="Enter Deducted Tax Amount"> <br>
+          </form>
+      </div>
+      <div class="details">
+          <button type="submit" onclick="submit()" name="btn">Get Salary Details</button>
+      </div>
+      <div id="data">
+            
+      </div>
+      </div>
+      <script>
+        function submit(){
+        Eid=document.getElementById("Eid").value;
+        name=document.getElementById("Ename").value;
+        Bsal=parseInt(document.getElementById("Basic").value);
+        Hra=parseInt(document.getElementById("Hra").value);
+        oa=parseInt(document.getElementById("OA").value);
+        pf=parseInt(document.getElementById("pf").value);
+        Tax=parseInt(document.getElementById("tax").value);
+        
+        diff=((Bsal+Hra+oa)-(pf+Tax));
+        dat.innerHTML= ("Salary is :"+diff);
+
+        }
+      </script>
+</body>
+</html>

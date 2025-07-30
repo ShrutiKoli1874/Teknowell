@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    // single inheritance//
+    //   class A{
+         
+    //     m1()
+    //     {
+    //         document.writeln("m1")
+    //     }
+    //     disp()
+    //     {
+    //         document.writeln("i am disp of a");
+    //     }
+    //   }
+
+    //   class B extends A{
+    //      m2(){
+    //         document.writeln("m2");
+    //      }
+    //      disp(){
+    //         document.writeln("i am disp of b")
+    //      }
+    //   }
+    //   b=new B();
+    //   b.m1();
+    //   document.writeln("<br>");
+    //   b.m2();
+
+
+
+    // mutiple inheritance//
+    //    class A{
+         
+    //     m1()
+    //     {
+    //         document.writeln("m1")
+    //     }
+    //     disp()
+    //     {
+    //         document.writeln("i am disp of a");
+    //     }
+    //   }
+
+    //   class B extends A{
+    //      m2(){
+    //         document.writeln("m2");
+    //      }
+    //      disp(){
+    //         document.writeln("i am disp of b")
+    //      }
+    //   }
+
+    //   class C extends B{
+         
+    //     m3()
+    //     {
+    //         document.writeln("m3")
+    //     }
+    //     disp()
+    //     {
+    //         document.writeln("i am disp of c");
+    //     }
+    //   }
+
+
+    //   c= new C();
+    //   c.m2();
+    //   document.writeln("<br>");
+    //   c.disp();
+
+//Hierarchical constructor//
+
+    class A{
+         
+        m1()
+        {
+            document.writeln("m1")
+        }
+        disp()
+        {
+            document.writeln("i am disp of a");
+        }
+      }
+
+      class B extends A{
+         m2(){
+            document.writeln("m2");
+         }
+         disp(){
+            document.writeln("i am disp of b")
+         }
+      }
+
+      
+    class C extends A{
+         
+        m3()
+        {
+            document.writeln("m3")
+        }
+        disp()
+        {
+            document.writeln("i am disp of c");
+        }
+      }
+
+      c=new C();
+      c.m3();
+      c.disp();
+    </script>
+</body>
+</html>

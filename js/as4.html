@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url(./london.jpg);
+    }
+    .form-container {
+      width: 300px;
+      padding: 20px;
+      border: 2px solid  black;
+      border-radius: 8px;
+       opacity: 100%;
+     background-image: url(./london.jpg);
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid black;
+      border-radius: 4px;
+      margin-left: 20px;
+    }
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color:burlywood;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 25px;
+    }
+    .form-container button:hover {
+      background-color: #0056b3;
+    }
+    .success-message {
+      color: green;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="loginForm" class="form-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" required style="width: 250px;">
+    <input type="password" id="password" placeholder="Password" required style="width: 250px;">
+    <button onclick="login()" style="width: 250px;">Login</button>
+    <p id="loginMessage" class="success-message"></p>
+  </div>
+
+  <div id="registrationForm" class="form-container" style="display: none;">
+    <h2>Registration</h2>
+    <input type="text" id="regUsername" placeholder="Username" required style="width: 250px;">
+    <input type="email" id="regEmail" placeholder="Email" required style="width: 250px;">
+    <input type="password" id="regPassword" placeholder="Password" required style="width: 250px;">
+    <button onclick="register()" style="width: 250px;">Register</button>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      if (username =="shruti" && password =="1234") {
+        document.getElementById('loginMessage').innerText = "Login Successful!";
+        setTimeout(() => {
+          document.getElementById('loginForm').style.display = "none";
+          document.getElementById('registrationForm').style.display = "block";
+        }, 1000);
+      } else {
+        document.getElementById('loginMessage').innerText = "Invalid credentials. Try again.";
+      }
+    }
+
+    function register() {
+      const regUsername = document.getElementById('regUsername').value;
+      const regEmail = document.getElementById('regEmail').value;
+      const regPassword = document.getElementById('regPassword').value;
+
+      alert(`Registration Successful!\nUsername: ${regUsername}\nEmail: ${regEmail}`);
+
+      document.getElementById('registrationForm').reset();
+    }
+  </script>
+</body>
+</html>

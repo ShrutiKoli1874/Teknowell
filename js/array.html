@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+// 1-d array//
+        data=['a','b','c','d'];
+        // document.writeln(data+"<br>");
+
+        document.writeln(data[0]+ "<br>");
+        document.writeln(data[1]+ "<br>");
+        document.writeln(data[2]+ "<br>");
+        document.writeln(data[3]+ "<br>");
+          
+
+       //2d array//
+
+       size =[[1,0,8],[2,0,3],[2,3,3]];
+       document.writeln(size[0][0] + "<br>");
+
+
+    for(i=0;i<size.length;i++)
+    {
+        for(j=0;j<1;j++)
+    {
+        document.writeln(size[i][j]);
+    }
+    document.writeln("<br>");
+    }   
+
+
+    data=parseInt(prompt(" enetr type of array"));
+    arr2=new array (data);
+    for(i=0;i<data;i++)
+    {
+        arr2[i]=parseInt(prompt("enter array"));
+    }
+    for(i=0;i<data;j++)
+    {
+        document.writeln(data[i][j]);
+    }
+         document.writeln("<br>");
+    
+       
+//muti array//
+     
+
+
+
+
+       
+        
+    size=parseInt(prompt("enter a array"));
+    arr= new Array(size);
+       for(i=0;i<size;i++)
+    {
+        arr[i]=parseInt(prompt("enter data"));
+    }
+    for(i=0;i<size;i++){
+        document.writeln(arr[i]);
+    
+    }
+
+
+
+   
+
+
+
+
+
+
+    </script>
+</body>
+</html>

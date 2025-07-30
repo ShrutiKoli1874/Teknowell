@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<style>
+  .cal{
+    background-color:antiquewhite;
+    height:410px;
+    width: 300px;
+    flex-wrap: wrap;
+    display: flex;
+    border: 2px solid black;
+    margin-left: 350px;
+  }
+  .head{
+    text-align: center;
+    margin-left:90px;
+  }
+  
+  .details{
+    margin-left:65px;
+  }
+  .btn{
+    margin-left:100px;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <div class="cal">
+  <h2 class="head">Calculator</h2>
+  <div class="details">
+  <input type="number" id="num1" placeholder="Enter first number" required> <br><br>
+  <input type="number" id="num2" placeholder="Enter second number" required> <br><br>
+  <input type="text" id="result" placeholder="Result"> <br></div>
+<div class="btn">
+  <button onclick="add()" style="width:100px;">Add</button><br><br>
+  <button onclick="subtract()" style="width: 100px;">Subtract</button><br><br>
+  <button onclick="multiply()" style="width: 100px;">Multiply</button><br><br>
+  <button onclick="divide()" style="width: 100px;">Divide</button></div>
+  </div>
+
+  <script>
+    function f1() {
+       a = parseFloat(document.getElementById("num1").value);
+       b = parseFloat(document.getElementById("num2").value);
+      return [a, b];
+    }
+
+    function add() {
+      [a, b] = f1();
+       console.log(a);
+       console.log(b);
+       add=(a+b);
+       console.log(add);
+       document.getElementById("result").value = a + b;
+    }
+
+    function subtract() {
+      [a, b] = f1();
+      console.log(a);
+      console.log(b);
+      sub=(a-b);
+      console.log(sub);
+      document.getElementById("result").value = a - b;
+    }
+
+    function multiply() {
+      [a, b] = f1();
+      console.log(a);
+      console.log(b);
+      multiply=(a*b);
+      console.log(multiply);
+      document.getElementById("result").value = a * b;
+    }
+
+    function divide() {
+      [a, b] = f1();
+      console.log(a);
+      console.log(b);
+      divide=(a/b);
+      console.log(divide);
+      document.getElementById("result").value = b !== 0 ? a / b : "Cannot divide by";
+    }
+  </script>
+</body>
+</html>

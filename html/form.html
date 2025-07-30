@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+
+    <label>Enter your surname</label>
+    <input type="text" required placeholder="Enter your name"> <br> <br>
+
+    <label>Enter your gmail</label>
+    <input type="email" required placeholder="enter gmail"> <br><br>
+
+    <label>Enter your password</label>
+    <input type="password" required placeholder="enter password"> <br><br>
+
+    <label>gender</label> <br>
+    <input type="radio" name="gender">Female <br>
+    <input type="radio" name="gender">Male <br>
+    <input type="radio" name="gender">other <br>
+    
+    <label>date of birth</label> <br>
+    <input type="date" required placeholder="enter your birth date"> <br><br>
+
+    <label>enter your time</label>
+    <input type="time"> <br><br>
+
+    <label>address</label><br>
+    <textarea placeholder="enter your address"></textarea> <br><br>
+
+    <label>ages</label><br>
+    <input type="number"  value=10 min="10" max="20" required><br>
+
+    <label>Enter your city</label>
+    <select>
+        <option>Pune</option>
+        <option>Nashik</option>
+        <option>chinchwad</option>
+    </select>
+    <br> <br>
+    <label>enter college name</label>
+    <input list="college">
+    <datalist id="college">
+        <option>sppu</option>
+        <option>pcccs</option>
+        <option>asm</option>
+    </datalist>
+    <br><br>    
+    
+    <label>enter fav sub</label> <br>
+    <input type="checkbox">java <br>
+    <input type="checkbox">python <br>
+    <input type="checkbox">tcs <br>             
+
+    <label>upload files</label>
+    <input type="file" accept="application/*"> <br> <br>
+
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+    
+</form>
+    
+
+    
+</body>
+</html>
