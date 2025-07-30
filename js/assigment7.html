@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #img1{
-           height: 400px;
-            width: 500px;
-            margin-left:300px;
-        }
-        #bt1{
-            margin-left: 518px;
-            margin-top: 20px;
-            border: 2px solid   black;
-        }
-    </style>
+    <title>Assignment7 </title>
+   <style>
+       #bulb{
+        height: 300px;
+        width: 300px;
+       }
+       .mean{
+        height: 200px;
+        width: 200px;
+       }
+       #btn{
+        height: 40px;
+        width: 40px;
+       }
+   </style>
 </head>
 <body>
-     <div class="img">
-        <img id="img1"src="https://tse4.mm.bing.net/th/id/OIP.dTmDdvOWEO-0s7t0Z3Yr4gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="img1"><br>
-        <button id="bt1" onclick="f1()">ON/OFF</button>
-     </div>
-     <script>
-        function f1(){
-            let a=document.getElementById("img1").value;
-            let b=c.getAttributes("src");
-            if(Link="https://tse4.mm.bing.net/th/id/OIP.dTmDdvOWEO-0s7t0Z3Yr4gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3")
+    <div class="Mean">
+        <img id="bulb" src="https://tse4.mm.bing.net/th/id/OIP.dTmDdvOWEO-0s7t0Z3Yr4gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bulb">
+        <button id="btn" onclick="f1()">ON</button>
+    </div>
+    <script>
+        function f1()
         {
-            document.getElementById("img1").scr="ttps://i.pinimg.com/originals/92/7c/88/927c8888e61992cbd8df7bb45b425140.jpg";
-        }
-            else if(Link="ttps://i.pinimg.com/originals/92/7c/88/927c8888e61992cbd8df7bb45b425140.jpg")
+            let a = document.getElementById("bulb");
+            let link= a.getAttribute("src");
+            if(link=="https://tse4.mm.bing.net/th/id/OIP.dTmDdvOWEO-0s7t0Z3Yr4gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3")
         {
-                document.getElementById("img1").src="https://tse4.mm.bing.net/th/id/OIP.dTmDdvOWEO-0s7t0Z3Yr4gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3";
-            }
+                document.getElementById("bulb").src="https://img.freepik.com/free-vector/realistic-light-bulb-with-electricity_23-2149129410.jpg?w=2000";
+                btn.innerText="OFF";
+              
         }
-     </script>
+            else if(link=="https://img.freepik.com/free-vector/realistic-light-bulb-with-electricity_23-2149129410.jpg?w=2000")
+        {
+                document.getElementById("bulb").src="https://tse4.mm.bing.net/th/id/OIP.dTmDdvOWEO-0s7t0Z3Yr4gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3";
+                btn.innerHTML="ON";
+                
+        }
+        }
+    </script>
 </body>
 </html>

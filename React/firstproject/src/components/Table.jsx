@@ -23,6 +23,8 @@ function Table() {
             {data.map(u =>(
                 
                 <ol key={u.id}>
+                   
+                    
                     <li> UserID:-{u.userId}</li>
                     <li>ID:-{u.id}</li>
                     <li>Title:-{u.title}</li>
