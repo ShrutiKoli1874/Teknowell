@@ -1,0 +1,47 @@
+.navbar{
+    background-color:pink;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.logo{
+    
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 38px;
+
+   
+}
+/* .img{
+    height: 85%;
+    width: 60%;
+    margin-left:8%;
+
+} */
+.menu{
+   
+    height: 100%;
+    width:90%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    font-size: large;
+    flex-direction: row;
+    
+}
+#t4{
+    height:80px;
+    width: 80px;
+    border-radius:2px;
+    align-items: center;
+    margin-left: 8px;
+    
+}

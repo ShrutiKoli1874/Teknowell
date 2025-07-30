@@ -1,0 +1,13 @@
+.count{
+    /* background-color: aqua; */
+    height:20%;
+    width:10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn1{
+    height:50px;
+    width: 50px;
+    
+}
