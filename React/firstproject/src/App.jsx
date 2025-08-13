@@ -11,6 +11,9 @@ import User from './components/User'
 import UserTable from './components/UserTable'
 import Table from './components/Table'
 import FetchList from './components/List'
+import Hook from './components/Hook'
+import Curd from './components/Curd'
+import Crud from './components/Crud'
 
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
 
   return (
     <>
+     {/* <Hook/> */}
+     {/* <Curd/> */}
+     <Crud/>
     {/* <Home/> 
    {/* <Nav name="Service" t1="Data"/> */}
   {/* <Count/> */}
@@ -33,7 +39,7 @@ function App() {
 
   {/* <Userform /> */}
   {/* <UserTable/> */}
-  <Table/>
+  {/* <Table/> */}
   {/* <FetchList/> */}
 
 

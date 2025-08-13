@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+            .conatiner{
+                display: flex;
+            }
+            .card{
+                background-color:rgb(215, 170, 102);
+                width: 300px;
+                border-radius: 15px;
+                box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+                overflow: hidden;
+                height:430px;
+        
+            }
+            #img{
+                height:210px;
+                width:300px;
+
+            }
+            .head{
+                text-align: center;
+                align-items: center;
+            }
+            #show{
+                /* margin-left: 190px;
+                margin-top: -40px; */
+                  border: none;
+                 padding: 5px 10px;
+                 font-size: 18px;
+                 border-radius: 5px;
+                  cursor: pointer; 
+                }
+                .show span {
+                     margin: 0 10px;
+                 font-size: 18px;
+                    }    
+              .hs{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+              }
+
+             #h2{
+                margin-top: 2px;
+            } 
+            .body{
+                background-color:peru;
+                display: flex;
+                flex-direction: row;
+                
+                gap: 20px;
+            }
+            .details{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            .buttons {
+               display: flex;
+               justify-content: space-around;
+                 gap: 10px; 
+              }
+
+
+            .add-to-cart, .buy-now {
+                flex: 1;
+                padding: 5px;
+                margin-top: 10px;
+                border: none;
+                border-radius: 10px;
+                font-size: 16px;
+                 cursor: pointer;
+            }
+            .add-to-cart {
+                background: #e0f0ff;
+                color: #333;
+           }
+           .buy-now {
+                 background: #ff4d4d;
+                color: #fff;
+            }
+           
+    </style>
+</head>
+<body class="body">
+
+        
+          <!-- card -->
+        <div class="card">
+
+            <img src="./burger.jpg" alt="" id="img">
+            <hr/>
+            <h2 class="head">Burger Veg</h2>
+            <hr/>
+            
+
+        <div class="hs">
+              <h2 id="h2">
+                      $80
+             </h2>
+             <div id="show" >
+                 <button id="decrement">-</button>
+                 <button id="counter">1</button>
+                 <button id="increment">+</button>
+            </div>
+         </div>
+              <div class="details">
+                 <div>⭐ 4.9</div>
+                 <div>⏱️ 10 min</div>
+                 <div>🔥 238 kcal</div>
+              </div>    
+            <div class="buttons">
+                 <button class="add-to-cart">🛒 Add to cart</button>
+                <button class="buy-now">Buy now</button>
+            </div>
+     </div>
+
+        </div>
+
+              <!-- card 1 -->
+             <div class="card">
+
+            <img src="./french-fries-.jpg" alt="" id="img"><hr/>
+            <h2 class="head">French Frires</h2><hr/>
+           
+
+            <div class="hs">
+              <h2 id="h2">
+                      $50
+             </h2>
+             <div id="show" >
+                 <button id="decrement">-</button>
+                 <button id="counter">1</button>
+                 <button id="increment">+</button>
+                 
+             </div>
+             </div>
+              <div class="details">
+              <div>⭐ 5.2</div>
+              <div>⏱️ 5 min</div>
+              <div>🔥 230 kcal</div>
+              </div>    
+            <div class="buttons">
+                 <button class="add-to-cart">🛒 Add to cart</button>
+                         <button class="buy-now">Buy now</button>
+            </div>
+     
+
+        </div>
+
+
+          <div class="card">
+
+            <img src="./cheese.jpg" alt="" id="img"><hr/>
+            <h2 class="head">Pizza</h2>
+            <hr/>
+
+            <div class="hs">
+              <h2 id="h2">
+                      $300
+             </h2>
+             <div id="show" >
+                 <button id="decrement">-</button>
+                 <button id="counter">1</button>
+                 <button id="increment">+</button>
+                 
+              </div>
+         </div>
+              <div class="details">
+                  <div>⭐ 9.2</div>
+                   <div>⏱️ 15 min</div>
+                    <div>🔥 300 kcal</div>
+              </div>    
+               <div class="buttons">
+                 <button class="add-to-cart">🛒 Add to cart</button>
+                    <button class="buy-now">Buy now</button>
+                 </div>
+     
+
+        </div>
+        
+
+
+
+          <div class="card">
+
+            <img src="./coffe.jpg" alt="" id="img"><hr/>
+            <h2 class="head">Cold coffe</h2><hr/>
+            
+
+            <div class="hs">
+              <h2 id="h2">
+                      $100
+             </h2>
+             <div id="show" >
+                 <button id="decrement">-</button>
+                 <button id="counter">1</button>
+                 <button id="increment">+</button>
+                 
+              </div>
+             </div>
+              <div class="details">
+              <div>⭐ 6.9</div>
+              <div>⏱️ 5 min</div>
+              <div>🔥 2 kcal</div>
+              </div>    
+            <div class="buttons">
+               <button class="add-to-cart">🛒 Add to cart</button>
+                <button class="buy-now">Buy now</button>
+            </div>
+</div>
+
+</body>
+    <script>
+    let counterValue = 1;
+    const counterDisplay = document.getElementById('counter');
+    const incrementButton = document.getElementById('increment');
+    const decrementButton = document.getElementById('decrement');
+
+
+    counterDisplay.textContent = counterValue;
+  updateButtons();
+
+  incrementButton.addEventListener('click', () => {
+    counterValue++;
+    counterDisplay.textContent = counterValue;
+    updateButtons();
+  });
+
+  decrementButton.addEventListener('click', () => {
+    if (counterValue > 0) {
+      counterValue--;
+      counterDisplay.textContent = counterValue;
+      updateButtons();
+    }
+  });
+
+  function updateButtons() {
+    // disable decrement if at zero
+    decrementButton.disabled = counterValue <= 0;
+  }
+    </script>
+    
+
+</html>

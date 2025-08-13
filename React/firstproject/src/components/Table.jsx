@@ -19,10 +19,19 @@ function Table() {
                 <th>Description</th>
             </tr>
         </thead> */}
-        {/* <tbody> */}
+        <tbody>
             {data.map(u =>(
                 
-                <ol key={u.id}>
+                // <tr key={u.id}>
+                   
+                    
+                //     <th> UserID:-{u.userId}</th>
+                //     <th>ID:-{u.id}</th>
+                //     <th>Title:-{u.title}</th>
+                //     <th>Body:-{u.body}</th>
+                // </tr>
+
+                 <ol key={u.id}>
                    
                     
                     <li> UserID:-{u.userId}</li>
@@ -33,7 +42,7 @@ function Table() {
                 
 
             ))}
-        {/* </tbody> */}
+        </tbody>
 
     </table>
    </div>

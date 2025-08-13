@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .calculator {
+    background:purple;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px gray;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 340px;
+  }
+  
+  #result {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid black;
+  }
+  
+  button:hover {
+    background-color:lightcoral;
+  }
+  
+  button:nth-child(4n) {
+    background-color: #28a745;
+  }
+  
+  button:nth-child(4n):hover {
+    background-color: palegoldenrod;
+  }
+  .mean{
+    align-items: center;
+    text-align: center;
+  }
+</style>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="mean">
+    <h2>Calculator </h2></div>
+  <div class="calculator">
+    <input type="text" id="result" placeholder="Enter Digit" >
+    <div class="buttons">
+      <button onclick="clearResult()">C</button>
+      <button onclick="appendValue('/')">/</button>
+      <button onclick="appendValue('*')">*</button>
+      <button onclick="appendValue('-')">-</button>
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('+')">+</button>
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="calculateResult()">=</button>
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="appendValue('0')">0</button>
+      
+    </div>
+  </div>
+  
+  <script>
+  function appendValue(value) {
+    const result = document.getElementById('result');
+    result.value += value;
+  }
+  
+  function clearResult() {
+    const result = document.getElementById('result');
+    result.value = '';
+  }
+  
+  function calculateResult() {
+    const result = document.getElementById('result');
+    try {
+      result.value = eval(result.value);
+    } catch (error) {
+      result.value = 'Error';
+    }
+  }
+  </script>
+</body>
+</html>
+
+</body>
+</html>

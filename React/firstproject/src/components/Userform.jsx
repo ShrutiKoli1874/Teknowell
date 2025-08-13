@@ -32,8 +32,9 @@ function Userform() {
     </form>
     </div>
     <hr/>
-    {FormData[0]}
-    {FormData[1]}
+    
+    UserName: {formData[0]}<br/>
+    Paswword: {formData[1]}
 
     </>
   )

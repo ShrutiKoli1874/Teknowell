@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment5</title>
+    <link rel="stylesheet" href="./Assigment.css">
+    
+</head>
+<body class="body">
+    <div class="Navbar">
+        <div class="Logo">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/food-restaurant-icon-logo-free-design-template-ad9f4accff42e0cd6a28edc27da44471_screen.jpg?ts=1662005576" alt="" , id="lp">
+
+        </div>
+        <div class="Menu">
+            <p><a href="./Assigment5.html" style="text-decoration: none; color: white;">Home</a></p>
+             <p><a href="./Menu.html" style="text-decoration: none; color: white;">Menu</a></p>
+              <p><a href="./Menu.html" style="text-decoration: none; color: white;">About</a></p>
+             <p><a href="./Menu.html" style="text-decoration: none; color: white;">Contact</a></p>
+        </div>
+        </div>
+        <div class="form">
+            <h2 id="h">Login Form</h2>
+        <form class="f">
+            <label>Enter Your Name:</label><br>
+            <input type="text" id="username" required placeholder="Enter Name"><br>
+            <label>Enter Your Passord:</label><br>
+            <input type="password" id="pass" required placeholder="Enter password"><br><br>
+            <button onclick="f1()">Login</button>
+        </form>
+        </div>
+        <script>
+             function f1() 
+        {
+            let a = document.getElementById("username").value;
+            let b = document.getElementById("pass").value;
+            if (a == "shruti" && b == "1212") 
+            {
+                alert("Login Sucessfully");
+            } 
+            else 
+            {
+                alert("Login Failed");
+            }
+        }
+
+        
+        </script>
+</body>
+</html>

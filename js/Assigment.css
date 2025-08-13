@@ -1,0 +1,69 @@
+.Navbar{
+      background-color:black;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.body{
+    margin:0px;
+    border: 10px;
+    background-image: url(./food.jpg);
+}
+.Logo{
+    height: 140px;
+    width: 100px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 38px;
+    
+}
+#lp{
+    height: 120px;
+    width: 100px;
+    margin-top: 12px;
+    margin-left: 8px;
+    border-radius:5px;
+    border: 1px solid white;
+}
+.Menu{
+     height: 100%;
+    width:90%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    font-size: large;
+    flex-direction: row;
+    color: white;
+    font-size: x-large;
+
+}
+
+/* login form */
+
+.form{
+    border: 2px solid black;
+    height: 200px;
+    width: 300px;
+    margin-left:460px;
+    margin-top: 50px;
+
+    
+
+}
+ button:hover {
+            
+    background-color: #0056b3;
+  }
+#h{
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.f{
+    text-align: center;
+}
+
